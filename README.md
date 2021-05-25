@@ -7,6 +7,8 @@
 
 This fork sets up [atlantis](https://www.runatlantis.io/) as a [cloud.gov application](manifest.yml) and will use circleci and github actions to run [security hardening terraform modules maintained by GSA ODP team](https://github.com/gsa?q=ODP&type=&language=&sort=) and run [inspec](https://inspec.io) tests using the [heimdall](https://github.com/mitre/heimdall2) format agaisnt sandbox AWS, Azure, GCP environments to develop and test baseline configurations in conjuction with documenting their security controls using [TTS Common Controls](https://github.com/18f/tts-common-controls). 
 
+**[![Build Status](https://circleci.com/gh/18F/terragoat.svg?style=badge)](https://circleci.com/gh/18F/terragoat)**
+
 TerraGoat is a learning and training project that demonstrates how common configuration errors can find their way into production cloud environments.
 
 ## Table of Contents
