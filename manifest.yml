@@ -30,7 +30,7 @@ applications:
     # Github
     #ATLANTIS_GH_TOKEN: 
     #ATLANTIS_GH_USER: 
-    #ATLANTIS_GH_APP_ID: atlantisjediny
+    #ATLANTIS_GH_APP_ID:
     #ATLANTIS_GH_WEBHOOK_SECRET: "((gh_webhook_secret))"
     # Slack
     #ATLANTIS_SLACK_TOKEN: 
