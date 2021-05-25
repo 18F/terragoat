@@ -1,0 +1,8 @@
+version: 3
+projects:
+- dir: terraform/aws
+  workspace: aws
+- dir: terraform/azure
+  workspace: azure
+- dir: terraform/gcp
+  workspace: gcp
