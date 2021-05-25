@@ -1,0 +1,44 @@
+# Step 1: Setup a cloud.gov account, follow instructions to install the cf-cli, and login on the command line:
+# Go to https://cloud.gov/docs/getting-started/accounts/
+# Go to https://cloud.gov/docs/getting-started/setup/
+# Step 2: git clone this repo and cd to it, then login 
+# $ cf login -a api.fr.cloud.gov  --sso
+# Copy and Paste the Temporary Authentication Code when prompted
+# Step 3:
+# $ cf push
+
+applications:
+- name: atlantis-bot
+  memory: 512m
+  disk_quota: 1g
+  instances: 1
+  stack: cflinuxfs3
+  timeout: 60
+  port: 4141
+  command: |
+    atlantis server
+  docker:
+    image: runatlantis/atlantis:latest
+  env:
+    URL: https://atlantis-bot.app.cloud.gov/
+    ATLANTIS_PORT: 8080
+    ATLANTIS_REPO_ALLOWLIST: "github.com/18f/terragoat"
+    #SECRET: $ATLANTIS_GH_WEBHOOK_SECRET
+    #TOKEN: ""
+    # tfstate
+    #TERRAGOAT_STATE_BUCKET: 
+    # Github
+    #ATLANTIS_GH_TOKEN: 
+    #ATLANTIS_GH_USER: 
+    #ATLANTIS_GH_APP_ID:
+    #ATLANTIS_GH_WEBHOOK_SECRET: "((gh_webhook_secret))"
+    # Slack
+    #ATLANTIS_SLACK_TOKEN: 
+    # AWS
+    #AWS_ACCESS_KEY_ID: ((aws_access_key_id))
+    #AWS_SECRET_ACCESS_KEY: ((aws_secret_access_key))
+    #AWS_DEFAULT_REGION: "us-east-2"
+    # Azure
+    #TERRAGOAT_RESOURCE_GROUP:
+    #TERRAGOAT_STATE_STORAGE_ACCOUNT:
+    #TERRAGOAT_STATE_CONTAINER:

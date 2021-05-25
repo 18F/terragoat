@@ -1,19 +1,12 @@
 # TerraGoat - Vulnerable Terraform Infrastructure
-
-[![Maintained by Bridgecrew.io](https://img.shields.io/badge/maintained%20by-bridgecrew.io-blueviolet)](https://bridgecrew.io/?utm_source=github&utm_medium=organic_oss&utm_campaign=terragoat)
-[![Infrastructure Tests](https://www.bridgecrew.cloud/badges/github/bridgecrewio/terragoat/general)](https://www.bridgecrew.cloud/link/badge?vcs=github&fullRepo=bridgecrewio%2Fterragoat&benchmark=INFRASTRUCTURE+SECURITY)
-[![CIS Azure](https://www.bridgecrew.cloud/badges/github/bridgecrewio/terragoat/cis_azure)](https://www.bridgecrew.cloud/link/badge?vcs=github&fullRepo=bridgecrewio%2Fterragoat&benchmark=CIS+AZURE+V1.1)
-[![CIS GCP](https://www.bridgecrew.cloud/badges/github/bridgecrewio/terragoat/cis_gcp)](https://www.bridgecrew.cloud/link/badge?vcs=github&fullRepo=bridgecrewio%2Fterragoat&benchmark=CIS+GCP+V1.1)
-[![CIS AWS](https://www.bridgecrew.cloud/badges/github/bridgecrewio/terragoat/cis_aws)](https://www.bridgecrew.cloud/link/badge?vcs=github&fullRepo=bridgecrewio%2Fterragoat&benchmark=CIS+AWS+V1.2)
-[![PCI](https://www.bridgecrew.cloud/badges/github/bridgecrewio/terragoat/pci)](https://www.bridgecrew.cloud/link/badge?vcs=github&fullRepo=bridgecrewio%2Fterragoat&benchmark=PCI-DSS+V3.2)
-![Terraform Version](https://img.shields.io/badge/tf-%3E%3D0.12.0-blue.svg) 
+![Terragoat](terragoat-logo.png)
 [![slack-community](https://slack.bridgecrew.io/badge.svg)](https://slack.bridgecrew.io/?utm_source=github&utm_medium=organic_oss&utm_campaign=terragoat)
 
 
-TerraGoat is Bridgecrew's "Vulnerable by Design" Terraform repository.
-![Terragoat](terragoat-logo.png)
+>This is a [fork of TerraGoat Bridgecrew's is "Vulnerable by Design" Terraform repository](https://github.com/bridgecrew/terragoat). Used to test Infrastructure as Code automation and practice mitigating **Bad practices** into **Best practices**. 
 
-TerraGoat is Bridgecrew's "Vulnerable by Design" Terraform repository.
+This fork sets up [atlantis](https://www.runatlantis.io/) as a [cloud.gov application](manifest.yml) and will use circleci and github actions to run [security hardening terraform modules maintained by GSA ODP team](https://github.com/gsa?q=ODP&type=&language=&sort=) and run [inspec](https://inspec.io) tests using the [heimdall](https://github.com/mitre/heimdall2) format agaisnt sandbox AWS, Azure, GCP environments to develop and test baseline configurations in conjuction with documenting their security controls using [TTS Common Controls](https://github.com/18f/tts-common-controls). 
+
 TerraGoat is a learning and training project that demonstrates how common configuration errors can find their way into production cloud environments.
 
 ## Table of Contents
