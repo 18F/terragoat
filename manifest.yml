@@ -24,14 +24,14 @@ applications:
     ATLANTIS_PORT: 8080
     ATLANTIS_REPO_ALLOWLIST: "github.com/18f/terragoat"
     #SECRET: $ATLANTIS_GH_WEBHOOK_SECRET
-    #TOKEN: "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"
+    #TOKEN: ""
     # tfstate
     #TERRAGOAT_STATE_BUCKET: 
     # Github
     #ATLANTIS_GH_TOKEN: 
     #ATLANTIS_GH_USER: 
     #ATLANTIS_GH_APP_ID: atlantisjediny
-    #ATLANTIS_GH_WEBHOOK_SECRET: "GgJMwT`pi%!&TR8pnTKkDK*#>>Za<?N+QVRuf`xJQZ72D`HYB"
+    #ATLANTIS_GH_WEBHOOK_SECRET: "((gh_webhook_secret))"
     # Slack
     #ATLANTIS_SLACK_TOKEN: 
     # AWS
